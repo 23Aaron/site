@@ -4,4 +4,14 @@ $(document).ready(function() {
     //i.e. apply safari class via jquery
     $(".navbar").addClass("fancy");
   }
+
+  new TypeIt('#typedout', {
+    strings: '23 Aaron',
+    speed: 50, 
+    afterComplete: function (instance) {
+      instance.destroy(true);
+    }
+  }).go();
+
 });
+

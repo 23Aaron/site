@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="V91Xt8plPRa56Ej5hb6vSuOGjFA7dTmdTfQYUMaDgqU" />  
+
+    <meta name="google-site-verification" content="V91Xt8plPRa56Ej5hb6vSuOGjFA7dTmdTfQYUMaDgqU" />    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>23 Aaron</title>
 
-	<!-- Favicons -->
+
 	<link rel="apple-touch-icon" sizes="180x180" href="/site/assets/images/favicons/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/site/assets/images/favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/site/assets/images/favicons/favicon-16x16.png">
@@ -17,55 +18,70 @@
 	<meta name="msapplication-TileColor" content="#2d89ef">
 	<meta name="msapplication-config" content="/site/assets/images/favicons/browserconfig.xml">
 	<meta name="theme-color" content="#ffffff">
-	<!-- Favicons  -->
-    
-	<!-- Primary Meta Tags -->
+
 	<title>23 Aaron</title>
 	<meta name="title" content="23 Aaron">
 	<meta name="description" content="A personal portfolio site including projects and how to reach me, among other things.">
 
-	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://23aaron.com/">
 	<meta property="og:title" content="23 Aaron">
 	<meta property="og:description" content="A personal portfolio site including projects and how to reach me.">
 	<meta property="og:image" content="/site/assets/images/meta af.png">
 
-	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://23aaron.com">
 	<meta property="twitter:title" content="23 Aaron">
 	<meta property="twitter:description" content="A personal portfolio site including projects and how to reach me, among other things, such as friends' projects">
 	<meta property="twitter:image" content="/site/assets/images/meta af.png">
 	
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="/site/assets/js/main.js"></script>
-  <link rel="stylesheet" href="/site/assets/css/styles.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/site/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/site/assets/css/styles.css">
 
-  <!-- FontAwesome -->
-  <script src="https://kit.fontawesome.com/30c2495b0b.js" crossorigin="anonymous"></script>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/30c2495b0b.js" crossorigin="anonymous"></script>
+
+    <!--TypeItJS-->
+    <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>
+
+
+    <!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="../../site/assets/js/jquery-3.3.1.min.js"></script>
+    
+    <!--Include all compiled plugins (below), or include individual files as needed-->
+    <script src="../../site/assets/js/popper.min.js"></script>
+
 </head>
 
 
+<nav class="navbar navbar-light fixed-top fancy">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+        <img src="https://github.com/23Aaron.png" width="30" height="30" class="d-inline-block align-top logo" alt="">
+          <b>23 Aaron</b>
+        </a>
+    </div>
+</nav>
 <body>
-    <!-- Bootstrap Brand Bar -->
-    <nav class="navbar navbar-light fixed-top">
-	    <div class="container">
-		    <a class="navbar-brand" href="#">
-			<img src="/site/assets/images/23%20Aaron.png" width="30" height="30" class="d-inline-block align-top logo" alt="">
-			  <b>23 Aaron</b>
-		    </a>
-	    </div>
-    </nav>
-
-    <!-- Hero Header -->
+    <!--Hero Header-->
     <section>
       <div class="container-fluid hero-jumbo">
-        <h1>Welcome to my site.</h1>
-        <p class="lead hero-subtext">This is a small collection of my work and online presence to date.</p>
-      </div>
+          <div class="image-container">
+            <img src="https://github.com/23Aaron.png" width="100" height="100" class="d-inline-block align-top logo" alt="">
+          </div>
+          <div>
+            <h1>
+              <span id="typedout" style="display: inline-block; font-family: monospace;">
+              </span>
+            </h1>
+          </div>
+          <div>
+            <p class="lead hero-subtext">This is a small collection of my work and online presence to date.</p>
+          </div>
+        </div>
     </section>
 
     <section>
@@ -73,7 +89,7 @@
 			<h2>Here is a list of places you can see my work in action.</h2>
 		</div>
 
-      <!-- Socials -->
+      <!--Socials-->
       <div class="container mt-2">
         <div class="row">
           <div class="col-md-4 col-12">
@@ -120,7 +136,7 @@ Twitter is the place to check to see when I'm working on something new, or to se
       </div>
     </section>
 
-    <!-- Project Showcase -->
+    <!--Project Showcase-->
     <section>
       <div class="container">
         
@@ -139,7 +155,7 @@ Twitter is the place to check to see when I'm working on something new, or to se
             <img class="img-fluid icon" src="/site/assets/images/tb.png" height="200" width="200" alt="Jeff Williams Bot" >
             <h4><a href="https://talkboard.live">TalkBoard&nbsp;</a></h4>
             <h6>This is a podcast organised and hosted by me and <a href="https://twitter.com/arm64e" target="_blank">Kritanta</a> about jailbreaking and other tech related subjects. Available on <a href="https://podcasts.apple.com/gb/podcast/talkboard/id1469760640" target="_blank">Apple</a> and <a href="https://open.spotify.com/show/1sCjmMpUDqnJNU54KwRf2Z?si=HTa815wcTX-bzqYVqqZDBQ" target="_blank">Spotify</a>. Official <a href="https://patreon.com/TalkBoard" target="_blank">Patreon</a> and <a href="https://discord.gg/jPtvbWV" target="_blank">Discord</a> links.</h6>
-          </div>
+          <script src="https://unpkg.com/typeit@8.2.0/dist/index.umd.js"></script>div>
         </div>
         <div class="row">
           <div class="col-md-6 col-12 text-center">
@@ -225,21 +241,15 @@ Twitter is the place to check to see when I'm working on something new, or to se
     <hr>
     </div>
   </section>
-
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>A 23 Aaron site.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../../site/assets/js/jquery-3.3.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../../site/assets/js/popper.min.js"></script>
   </body>
 </html>
+
+<footer class="text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>A 23 Aaron site.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
