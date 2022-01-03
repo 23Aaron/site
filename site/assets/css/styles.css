@@ -76,6 +76,11 @@
   }
 }
 
+.friend-text {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .hero-jumbo {
   background: linear-gradient(340deg, #ff7b01, #7736bf);
   background-size: 1000% 1000%;
@@ -225,42 +230,8 @@ h1 {
   justify-content: center;
 }
 
-.typed-out {
-  padding-top: 15px;
-  border-left: 0.15em;
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 1.6rem;
-  width: 0;
-  max-width: fit-content;
-  font-size: 50px;
-  border-right: 0.15em solid white;
-  animation: 
-    typing 2.5s steps(10, end) forwards,
-    blink-caret 0.5s step-end;
-    
-}
-
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-    border-right: 0.15em solid transparent;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: white;
-  }
+.shifty {
+    fill: black;
 }
 
 .projects {
