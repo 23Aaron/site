@@ -1,7 +1,11 @@
 @media (prefers-color-scheme: dark) {
-  .contact-box {
+  .contact-box,
+  .card {
     background-color: #141414 !important;
     color: #ffffff !important;
+  }
+
+  .contact-box {
     box-shadow: 0 1px 5px 0 rgba(175, 175, 175, 0),
       0 1px 5px 0 rgba(175, 175, 175, 0), 0 1px 5px 0 rgba(175, 175, 175, 0),
       0 1px 5px 0 rgba(175, 175, 175, 0) !important;
@@ -79,6 +83,13 @@
 .friend-text {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.blog-img {
+  object-fit: cover;
+  border-radius: 5%;
+  width: 200px;
+  height: 200px;  
 }
 
 .hero-jumbo {
@@ -306,6 +317,27 @@ h1 {
     0 1px 15px 0 rgba(0, 0, 0, 0.15), 0 1px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
+.btn-download {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	padding: 10px 20px;
+	max-height: 40px;
+	line-height: 1em;
+	border-radius: 8px;
+	font-weight: 600;
+	display: inline-flex;
+}
+
+.down-arrow {
+	display: inline-block;
+	position: relative;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+	vertical-align: text-top;
+  margin-right: 0.2rem;
+}
+
 .contact-box:link {
   text-decoration: none;
 }
@@ -332,4 +364,12 @@ h1 {
 
 .email {
   color: #037bff;
+}
+
+.card {
+  border-radius: 2em;
+}
+
+.card-img-top {
+  border-radius: calc(2em + 1px);
 }
