@@ -13,7 +13,6 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		target: '#mount',
 		vite: {
 			css: {
 				preprocessorOptions: {

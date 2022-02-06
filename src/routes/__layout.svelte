@@ -18,7 +18,7 @@
 <footer class="text-center">
 	<div class="container">
 		<div class="row">
-			<hr>
+			<hr />
 			<div class="col-12">
 				<p>A 23 Aaron site.</p>
 			</div>
@@ -76,7 +76,7 @@
 	}
 
 	.classname a {
-    text-decoration: none;
+		text-decoration: none;
 	}
 	.navbar {
 		animation-name: navbar-in;
