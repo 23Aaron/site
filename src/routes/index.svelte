@@ -287,6 +287,9 @@
 </div>
 
 <style>
+	a {
+		text-decoration: none;
+	}
 	@media (prefers-color-scheme: dark) {
 		.contact-box,
 		.card {

@@ -75,9 +75,6 @@
 		}
 	}
 
-	.classname a {
-		text-decoration: none;
-	}
 	.navbar {
 		animation-name: navbar-in;
 		animation-duration: 0.7s;
