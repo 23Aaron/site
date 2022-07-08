@@ -1,0 +1,43 @@
+---
+layout: default
+class: home
+---
+<body>
+    <!--Hero Header-->
+    <section>
+      <div class="container-fluid hero-jumbo">
+          <div class="image-container">
+            <img src="https://github.com/23Aaron.png" width="100" height="100" class="d-inline-block align-top logo" alt="">
+          </div>
+          <div>
+            <h1>
+              <span id="typedout" style="display: inline-block; font-family: monospace;">
+              </span>
+            </h1>
+            <br>
+            <h3 class="text-center mb-0">Here are the links to all my online presences.</h3>
+          </div>
+        </div>
+    </section>
+    <section class="container">
+        {% for member in site.data.links %}
+        <a href="{{ member.url }}{{ member.handle }}" class="container text-left contact-box" target="_blank">
+            <div class="row w-100">
+                <div class="col-auto">
+                    <img class="link-icon mb-0" src="/site/assets/images/{{ member.image }}.png">
+                </div>
+                <div class="col-auto">
+                    <h3>{{ member.platform | escape }}</h3>
+                    {% if member.subtitle %}
+                    <h4 class="blog-subheading h-100 mb-2">{{ member.subtitle }}</h4>
+                    {% else %}
+                    <h4 class="blog-subheading h-100 mb-2">@{{ member.handle }}</h4>
+                    {% endif %}
+                </div>
+            </div>
+        </a>
+        <br>
+        {% endfor %}
+        <hr>
+    </section>
+</body>

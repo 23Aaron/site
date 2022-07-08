@@ -1,0 +1,11 @@
+---
+---
+{% assign posts = site.posts %}{
+    "articles": [
+    {% for post in posts %}    {
+            "title": {{ post.title | jsonify }},
+            "date": {{ post.date | date_to_xmlschema | jsonify }},
+            "image": {{ post.image | jsonify }}
+        }
+    {% endfor %}]
+}

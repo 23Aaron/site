@@ -1,0 +1,38 @@
+- platform: Twitter
+  url: https://twitter.com/
+  handle: 23Aaron_
+  image: twitter
+
+- platform: Github
+  url: https://github.com/
+  handle: 23Aaron
+  image: github
+
+- platform: Discord
+  url: https://discord.gg/
+  handle: XnmwQ74QRZ
+  subtitle: "@23 Aaron#0001"
+  image: discord
+
+- platform: Email
+  url: "mailto:"
+  handle: support@23aaron.com
+  subtitle: support@23aaron.com
+  image: email
+
+- platform: Reddit
+  url: https://reddit.com/
+  handle: u/23Aaron
+  subtitle: u/23Aaron
+  image: reddit
+
+- platform: Instagram
+  url: https://instagram.com/
+  handle: twentythreeaaron
+  image: instagram
+
+- platform: Stack Overflow
+  url: https://stackoverflow.com/
+  handle: users/14141183/23-aaron
+  subtitle: 23 Aaron
+  image: stackoverflow

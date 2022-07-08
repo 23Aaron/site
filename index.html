@@ -50,7 +50,7 @@ class: home
     <img src="/site/assets/images/Discord-day.png" height="33px">
 				</picture>
                 <div class="media-body socials">
-                  <h5 class="mt-0 mb-1"><a href="https://discord.gg/qEeppkm" target="_blank">Discord</a></h5>
+                  <h5 class="mt-0 mb-1"><a href="https://discord.gg/XnmwQ74QRZ" target="_blank">Discord</a></h5>
 Come and hang out with me in my personal discord server. Ask questions about my work or projects, or just chill.</div>
               </li>
             </ul>
@@ -73,66 +73,110 @@ Twitter is the place to check to see when I'm working on something new, or to se
       </div>
     </section>
 
+    <!--Blog-->
+    {% assign latest_post = site.posts.first %}
+    {% assign second_post = site.posts[1] %}
+    <section>
+      <div class="container-fluid">
+        <div>
+          <div class="col-12 text-center">
+            <h2 class="project-header">Latest Blog Posts</h2>
+          </div>
+        </div>
+        <div class="container mt-2">
+          <div class="row posts-row">
+            <div class="col-md-6 col-12">
+              <a href="{{ latest_post.permalink }}" class="contact-box media-body socials">
+                <div class="mb-2">
+                  <img class="blog-hero" src="{{ latest_post.header }}">
+                </div>
+                <h5 class="caption">{{ latest_post.title | escape }}</h5>
+                <p class="blog-subheading">{{ latest_post.tagline | escape }}</p>
+              </a>
+        </div>
+            <div class="col-md-6 col-12">
+              <a href="{{ second_post.permalink }}" class="contact-box media-body socials">
+                <div class="mb-2">
+                  <img class="blog-hero" src="{{ second_post.header }}">
+                </div>
+                <h5 class="caption">{{ second_post.title | escape }}</h5>
+                <p class="blog-subheading">{{ second_post.tagline | escape }}</p>
+              </a>
+        </div>
+          </div>
+          <br>
+          <div class="text-center">
+            <a href="/blog">See Previous Posts →</a>
+          </div>
+          <hr>
+        </div>
+    </section>
+
     <!--Project Showcase-->
     <section>
       <div class="container-fluid">
-        
         <div>
-          <div class="col-12 text-center">
+          <div class="container text-center">
             <h2 class="project-header">Latest Work</h2>
           </div>
         </div>
-        <div class="projects">
+        <div class="container projects">
           <div class="row">
             <div class="col-md-6 col-12 my-4 text-center">
               <img class="img-fluid icon" src="/site/assets/images/Taurine.png" height="200" width="200" >
               <h4><a href="https://taurine.app" target="_blank">Taurine</a></h4>
-              <h6>I designed and implemented the logo, UI and website for Taurine, making use of the Procursus bootstrap and libhooker, an all new hooking library designed with modern firmwares in mind.</h6>
+              <h6 class="friend-text">I designed and implemented the logo, UI and website for Taurine, making use of the Procursus bootstrap and libhooker, an all new hooking library designed with modern firmwares in mind.</h6>
             </div>
             <div  class="col-md-6 col-12 my-4 text-center">
               <img class="img-fluid icon" src="/site/assets/images/betelguese.png" height="200" width="200">
               <h4><a href="https://github.com/23Aaron/Betelguese">Betelguese</a></h4>
-              <h6>Betelguese is a program co-maintained by me and <a href="https://twitter.com/hbkirb" target="_blank">Adam Demasi</a> which allows you to use the Procursus bootstrap and libhooker library on your checkra1n-jailbroken device with a single click!</h6>
+              <h6 class="friend-text">Betelguese is a program co-maintained by me and <a href="https://twitter.com/hbkirb" target="_blank">Adam Demasi</a> which allows you to use the Procursus bootstrap and libhooker library on your checkra1n-jailbroken device with a single click!</h6>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-12 my-4 text-center">
             <img class="img-fluid icon" src="/site/assets/images/Flashback.png" height="200" width="200">
             <h4><a href="https://chariz.com/get/flashback" target="_blank">FlashBack</a></h4>
-            <h6>I assisted <a href="https://twt.mpg13.co" target="_blank">Micah</a> (the main developer of FlashBack) with a visual overhaul of FlashBack with some upgrades to functionality too. The redesigned FlashBack app now also contains a handy guide on how to use the app.</h6>
+            <h6 class="friend-text">I assisted <a href="http://twitter.micahpgomez.com/" target="_blank">Micah</a> (the main developer of FlashBack) with a visual overhaul of FlashBack with some upgrades to functionality too. The redesigned FlashBack app now also contains a handy guide on how to use the app.</h6>
           </div>
           <div class="col-md-6 col-12 my-4 text-center">
             <img class="img-fluid icon" src="/site/assets/images/tb.png" height="200" width="200">
             <h4><a href="https://talkboard.live">TalkBoard</a></h4>
-            <h6>This is a podcast organised and hosted by me and <a href="https://twitter.com/arm64e" target="_blank">cynder</a> about jailbreaking and other tech related subjects. Available on <a href="https://podcasts.apple.com/gb/podcast/talkboard/id1469760640" target="_blank">Apple</a> and <a href="https://open.spotify.com/show/1sCjmMpUDqnJNU54KwRf2Z?si=HTa815wcTX-bzqYVqqZDBQ" target="_blank">Spotify</a>. Official <a href="https://patreon.com/TalkBoard" target="_blank">Patreon</a> and <a href="https://discord.gg/jPtvbWV" target="_blank">Discord</a> links! The show is on hiatus, but hopefully back soon!</h6>
+            <h6 class="friend-text">This is a podcast organised and hosted by me and <a href="https://twitter.com/arm64e" target="_blank">cynder</a> about jailbreaking and other tech related subjects. Available on <a href="https://podcasts.apple.com/gb/podcast/talkboard/id1469760640" target="_blank">Apple</a> and <a href="https://open.spotify.com/show/1sCjmMpUDqnJNU54KwRf2Z?si=HTa815wcTX-bzqYVqqZDBQ" target="_blank">Spotify</a>. Official <a href="https://patreon.com/TalkBoard" target="_blank">Patreon</a> and <a href="https://discord.gg/jPtvbWV" target="_blank">Discord</a> links! The show is on hiatus, but hopefully back soon!</h6>
           </div>
         </div>
+        <hr>
 		</div>  
     </section>
-    <hr>
-<section>
-      <div class="container text-center">
-		    <h2>Friends' Projects</h2>
-		    <p>Below is a small collection of stuff that I think is cool, made by some cool people I know!</p>
-      </div>
+ 
+
+    <!--Friends' Projects-->
+    <section>
       <div class="container-fluid">
-       <div class="row text-center">
-          <div class="col-md-6 my-4 text-center">
-			  <img class="icon" src="/site/assets/images/chariz.svg" alt="">
-			  <a href="https://chariz.com" target="_blank"><h3>Chariz</h3></a>
-			  <h6 class="friend-text">Chariz is an awesome jailbreak repo run by my friends <a href="https://twitter.com/hbkirb" target="_blank">Adam</a> and <a href="https://twitter.com/aarnavtale" target="_blank">Aarnav</a>, and it's a one stop shop for awesome packages to breathe new life into your jailbroken iOS device, with cool tweaks and themes! <a href="https://repo.chariz.com" target="_blank">Check it out!</a></h6>
-			  </div>
-		     <div class="col-md-6 my-4 text-center">
-				<img src="/site/assets/images/streamticker.png" class="icon" alt="">
-				<a href="https://streamticker.bot" target="_blank"><h3>StreamTicker</h3></a>
-				<h6 class="friend-text">StreamTicker is a Discord bot developed by my friends <a href="https://twitter.com/laf0nd" target="_blank">Jack</a> and <a href="https://twitter.com/alistaiiiir" target="_blank">Alistair</a> that allows you to get realtime statistics about anything online. It pulls data from Twitter, Twitch, YouTube and many more! <a href="https://streamticker.bot/invite" target="_blank">Add it to your Discord!</a></h6>
-				 </div>
-		   </div>
+        <div class="container text-center">
+          <h2>Friends' Projects</h2>
+          <p>Below is a small collection of stuff that I think is cool, made by some cool people I know!</p>
+        </div>
+        <div class="container">
+          <div class="row text-center">
+              <div class="col-md-6 my-4 text-center">
+            <img class="icon" src="/site/assets/images/chariz.svg" alt="">
+            <a href="https://chariz.com" target="_blank"><h3>Chariz</h3></a>
+            <h6 class="friend-text">Chariz is an awesome jailbreak repo run by my friends <a href="https://twitter.com/hbkirb" target="_blank">Adam</a> and <a href="https://twitter.com/aarnavtale" target="_blank">Aarnav</a>, and it's a one stop shop for awesome packages to breathe new life into your jailbroken iOS device, with cool tweaks and themes! <a href="https://repo.chariz.com" target="_blank">Check it out!</a></h6>
+            </div>
+            <div class="col-md-6 my-4 text-center">
+            <img src="/site/assets/images/streamticker.png" class="icon" alt="">
+            <a href="https://streamticker.bot" target="_blank"><h3>StreamTicker</h3></a>
+            <h6 class="friend-text">StreamTicker is a Discord bot developed by my friends <a href="https://twitter.com/laf0nd" target="_blank">Jack</a> and <a href="https://twitter.com/alistaiiiir" target="_blank">Alistair</a> that allows you to get realtime statistics about anything online. It pulls data from Twitter, Twitch, YouTube and many more! <a href="https://streamticker.bot/invite" target="_blank">Add it to your Discord!</a></h6>
+            </div>
+          </div>
+          <hr>
+        </div>
       </div>
     </section>
 
-    
-    <hr>
+
+    <!--Contact Details-->
     <div class="support">
       <div>
           <h2 class="get-in-touch">Need to get in touch?</h2>

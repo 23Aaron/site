@@ -1,0 +1,27 @@
+{% include head.html %}
+{% include bar.html %}
+{% assign posts = site.page %}
+<div class="text-center" style="padding-top: 70px;">
+    <img class="blog-image" src="{{ page.header | escape}}">
+    <p class="photo-credit">Photo Credit: {{ page.credit }}</p>
+</div>
+
+<div class="container">
+    <article>
+        <h1>{{ page.title }}</h1>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <p class="h6 text-center">Released {{ page.date | date: date_format }}</p>
+        <div style="padding-top: 20px;" class="content">{{ content }}</div>
+    </article>
+    <div>
+        <h5>Share this on:</h5>
+        <a class="twitter-2" href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url | url_encode }}&text={{ page.title | url_encode }}{{ " by 23 Aaron" |  url_encode }}" target="_blank"><i class="fab share-icon fa-twitter"></i></a>
+        <a class="reddit" href="https://www.reddit.com/submit?url={{ page.url | absolute_url | url_encode }}&title={{ page.title | url_encode }}" target="_blank"><i class="fab share-icon fa-reddit-alien"></i></a>
+    </div>
+    <div>
+    <br>
+    <a href="{{ "/blog" | relative_url }}">← Back to Blog posts</a>
+    <hr>
+    </div>
+</div>
+{% include foot.html %}

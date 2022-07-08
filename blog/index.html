@@ -1,0 +1,39 @@
+---
+layout: default
+class: home
+---
+<body>
+    <br>
+    <br>
+    <br>
+    <header class="releaseheader">
+        <div class="container">
+            <h2>Blog Posts</h2>
+            <hr>
+        </div>
+    </header>
+    <section class="container">
+        {% for post in site.posts %}
+        <div class="section releaseblock">
+        <br>
+            <a href="{{ post.permalink }}" class="container contact-box text-left">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="blog-hero mb-0" src="{{ post.header }}">
+                    </div>
+                    <div class="col-md-9">
+											<div class="d-flex flex-column h-100">
+                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                        <h3>{{ post.title | escape }}</h3>
+                        <p class="blog-subheading h-100 mb-2">{{ post.tagline }}</p>
+                        <p class="h6">Released {{ post.date | date: date_format }}</p>
+											</div>
+                    </div>
+                </div>
+			</a>
+        </div>
+        {% endfor %}
+        <br>
+        <hr>
+    </section>    
+</body>
