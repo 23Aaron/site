@@ -8,7 +8,6 @@ category: "Blog"
 permalink: /blog/nord-2-review
 credit: Myself
 tagline: The return of the Flagship Killer?
-local_image: /site/assets/images/Nord2.jpg
 ---
 
 Remember when the OnePlus One came out? A cut price device, punching way above its weight, including the important things, and sacrificing features to bring you a great experience at its price. 
